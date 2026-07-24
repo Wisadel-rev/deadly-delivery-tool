@@ -1,0 +1,276 @@
+/* ==========================================================================
+   Global Reset & Base Theme
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* ==========================================================================
+   Navigation Tabs
+   ========================================================================== */
+.tab-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  background-color: #1e1e1e;
+  color: #888;
+  border: 1px solid #333;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.tab-btn.active, 
+.tab-btn:hover {
+  background-color: #333;
+  color: #fff;
+  border-color: #555;
+}
+
+/* ==========================================================================
+   Controls (Search Input, Filter Buttons, Item Counter)
+   ========================================================================== */
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+/* Wrapper to hold input and absolute clear button */
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-wrapper input {
+  padding-right: 32px; /* Leaves room so text doesn't overlap the ✕ */
+}
+
+/* Clear Search Button */
+.clear-btn {
+  display: none; /* Hidden by default until user types */
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  transition: color 0.15s ease;
+}
+
+.clear-btn:hover {
+  color: #ffffff;
+}
+
+input {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+
+input:focus {
+  border-color: #555;
+}
+
+select {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 0.9rem;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+select:focus, select:hover {
+  border-color: #555;
+}
+
+/* Rarity Filter Buttons Container */
+.filter-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  background-color: #1e1e1e;
+  color: #888;
+  border: 1px solid #333;
+  border-radius: 20px; /* Pill shape */
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  background-color: #2c2c2c;
+  color: #fff;
+  border-color: #555;
+}
+
+/* Active Filter Button State */
+.filter-btn.active {
+  background-color: #383838;
+  color: #ffffff;
+  border-color: #777;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
+}
+
+.item-count {
+  display: flex;
+  align-items: center;
+  padding: 10px 14px;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 6px;
+  color: #2ecc71;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+/* ==========================================================================
+   Grid & Card Layout (Updated for Images)
+   ========================================================================== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  border: 1px solid #333;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: #555;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Food Image Container & Image */
+.card-image-wrapper {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  background-color: #121212;
+  border: 1px solid #2a2a2a;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 4px;
+}
+
+/* Food Details Content */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.card-content h3 {
+  margin: 6px 0 4px 0;
+  font-size: 1.05rem;
+  color: #ffffff;
+}
+
+.value {
+  color: #2ecc71;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+/* ==========================================================================
+   Rarity Badges & Tier Colors
+   ========================================================================== */
+.badge {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-common { background-color: #7f8c8d; color: #fff; }
+.badge-uncommon { background-color: #2ecc71; color: #fff; }
+.badge-rare { background-color: #3498db; color: #fff; }
+.badge-epic { background-color: #9b59b6; color: #fff; }
+.badge-legendary { background-color: #f1c40f; color: #000; }
+.badge-mythic { background-color: #e74c3c; color: #fff; }
+
+/* ==========================================================================
+   Empty State
+   ========================================================================== */
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #888;
+  font-size: 1.2rem;
+  margin-top: 40px;
+}

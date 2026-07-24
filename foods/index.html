@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food List</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../css/foods.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Food List</h1>
+    <nav class="tab-nav">
+      <a href="../index.html" class="tab-btn">Home</a>
+      <a href="./index.html" class="tab-btn active">Food List</a>
+      <a href="../dishes/index.html" class="tab-btn">Dish List</a>
+      <a href="../calculator/index.html" class="tab-btn">Calculator</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="controls">
+      <div class="search-wrapper">
+        <input type="text" id="searchInput" placeholder="Search food..." />
+        <button id="clearSearchBtn" class="clear-btn" title="Clear Search">✕</button>
+      </div>
+
+      <div id="rarityFilterContainer" class="filter-buttons">
+        <button class="filter-btn active" data-rarity="All">All</button>
+        <button class="filter-btn" data-rarity="Common">Common</button>
+        <button class="filter-btn" data-rarity="Uncommon">Uncommon</button>
+        <button class="filter-btn" data-rarity="Rare">Rare</button>
+        <button class="filter-btn" data-rarity="Epic">Epic</button>
+        <button class="filter-btn" data-rarity="Legendary">Legendary</button>
+        <button class="filter-btn" data-rarity="Mythic">Mythic</button>
+      </div>
+
+      <select id="sortOption">
+        <option value="rarity">Sort: Rarity</option>
+        <option value="nameAsc">Sort: Name (A - Z)</option>
+        <option value="nameDesc">Sort: Name (Z - A)</option>
+        <option value="valAsc">Sort: Price (Low - High)</option>
+        <option value="valDesc">Sort: Price (High - Low)</option>
+      </select>
+
+      <span id="itemCount" class="item-count">0 Foods</span>
+    </div>
+
+    <div id="foodGrid" class="grid"></div>
+  </main>
+
+  <script src="../js/foods.js"></script>
+</body>
+</html>

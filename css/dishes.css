@@ -1,0 +1,187 @@
+/* ==========================================================================
+   Dish Card Layout & Base
+   ========================================================================== */
+.card.dish-card {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  border: 1px solid #333;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card.dish-card:hover {
+  transform: translateY(-3px);
+  border-color: #555;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* ==========================================================================
+   Header Section (Full Width Across Top)
+   ========================================================================== */
+.dish-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 8px;
+  width: 100%;
+}
+
+.dish-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+}
+
+.dish-header h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #ffffff;
+}
+
+/* Edible / Inedible Tags */
+.edible-tag {
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.tag-edible {
+  background-color: rgba(46, 204, 113, 0.2);
+  color: #2ecc71;
+  border: 1px solid #2ecc71;
+}
+
+.tag-inedible {
+  background-color: rgba(231, 76, 60, 0.2);
+  color: #e74c3c;
+  border: 1px solid #e74c3c;
+}
+
+.cook-time-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cook-time-label {
+  font-size: 0.85rem;
+  color: #aaa;
+  font-weight: 500;
+}
+
+.cook-time {
+  font-size: 0.85rem;
+  color: #f1c40f;
+  background-color: #2a2a1a;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* ==========================================================================
+   Middle Section (Side-by-Side Image & Ingredients)
+   ========================================================================== */
+.dish-body-middle {
+  display: flex;
+  align-items: center; /* Aligns image vertically with ingredients */
+  gap: 16px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.card-image-wrapper {
+  width: 72px;
+  height: 72px;
+  min-width: 72px;
+  background-color: #121212;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 6px;
+}
+
+.dish-section {
+  width: 100%;
+}
+
+.ingredients-section {
+  flex: 1;
+}
+
+/* ==========================================================================
+   Bottom Section (Full Width Effects)
+   ========================================================================== */
+.effects-section {
+  border-top: 1px dashed #2a2a2a;
+  padding-top: 8px;
+  margin-top: 4px;
+}
+
+.dish-section h4 {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.ingredient-list, 
+.effect-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 4px 0;
+}
+
+.ingredient-list li {
+  font-size: 0.9rem;
+  color: #ddd;
+  padding: 1px 0;
+}
+
+.effect-list li {
+  font-size: 0.9rem;
+  color: #2ecc71;
+  font-weight: 500;
+  padding: 1px 0;
+}
+
+/* ==========================================================================
+   Search Highlight & Empty State Styles
+   ========================================================================== */
+mark.highlight {
+  background-color: rgba(241, 196, 15, 0.35);
+  color: #fff;
+  padding: 0 2px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.no-results {
+  text-align: center;
+  color: #888;
+  font-size: 1.1rem;
+  grid-column: 1 / -1;
+  padding: 40px 0;
+}

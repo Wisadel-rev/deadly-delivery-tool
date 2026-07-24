@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../css/calculator.css">
+</head>
+<body>
+
+  <header>
+    <h1>Value Calculator</h1>
+    <nav class="tab-nav">
+      <a href="../index.html" class="tab-btn">Home</a>
+      <a href="../foods/index.html" class="tab-btn">Food List</a>
+      <a href="../dishes/index.html" class="tab-btn">Dish List</a>
+      <a href="./index.html" class="tab-btn active">Calculator</a>
+    </nav>
+  </header>
+
+  <main class="calculator-container">
+
+    <div class="calc-table">
+
+      <div class="calc-row">
+        <div class="row-label">Base Food</div>
+        <div class="row-content">
+          <div class="search-select-wrapper">
+            <input 
+              type="text" 
+              id="foodSearchInput" 
+              placeholder="Search or select a food item..." 
+              autocomplete="off" 
+            />
+            <button 
+              type="button" 
+              id="clearFoodSearchBtn" 
+              class="clear-search-btn" 
+              style="display: none;"
+            >&times;</button>
+            <div id="selectedFoodBadge" class="selected-badge hidden">
+              <span id="selectedFoodName">None</span> 
+              <span id="selectedFoodPrice" class="base-price-tag">($0)</span>
+              <button id="clearFoodBtn" class="btn-clear-badge">&times;</button>
+            </div>
+            <div id="foodDropdown" class="dropdown-list hidden"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="calc-row">
+        <div class="row-label">Size Factor</div>
+        <div class="row-content">
+          <input 
+            type="number" 
+            id="sizeInput" 
+            value="1" 
+            min="0.25" 
+            max="4" 
+            step="0.01" 
+            class="number-input"
+          />
+          <span class="field-hint">(Range: 0.25 to 4.0, Default: 1.0)</span>
+        </div>
+      </div>
+
+      <div class="calc-row">
+        <div class="row-label">Regular Mutations</div>
+        <div class="row-content">
+          <div id="regularMutationsContainer" class="tag-group"></div>
+        </div>
+      </div>
+
+      <div class="calc-row">
+        <div class="row-label">Advanced Mutations</div>
+        <div class="row-content">
+          <div id="advancedMutationsContainer" class="tag-group"></div>
+        </div>
+      </div>
+
+      <div class="calc-row">
+        <div class="row-label">Special Mutations</div>
+        <div class="row-content">
+          <div id="specialMutationsContainer" class="tag-group"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="output-section">
+      <div class="formula-display">
+        <span class="formula-label">Formula:</span>
+        <code id="formulaBreakdown">(Base x Size) x (1 + Reg) x (1 + Adv) x 3^(Special)</code>
+      </div>
+      <div class="result-display">
+        <div class="result-header">
+          <span class="result-label">Calculated Price:</span>
+          <button id="resetAllBtn" type="button" class="btn-reset-all">↺ Reset All</button>
+        </div>
+        <span id="finalPriceOutput" class="price-value">$0.00</span>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="../js/calculator.js"></script>
+</body>
+</html>

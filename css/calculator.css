@@ -1,0 +1,403 @@
+/* ==========================================================================
+   Global Reset & Base Theme (Matched with foods.css)
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* ==========================================================================
+   Navigation Tabs
+   ========================================================================== */
+.tab-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  background-color: #1e1e1e;
+  color: #888;
+  border: 1px solid #333;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.tab-btn.active, 
+.tab-btn:hover {
+  background-color: #333;
+  color: #fff;
+  border-color: #555;
+}
+
+/* ==========================================================================
+   Calculator Grid Container
+   ========================================================================== */
+.calculator-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.calc-table {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.calc-row {
+  display: flex;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.calc-row:last-child {
+  border-bottom: none;
+}
+
+/* Row Labels (Left Column) */
+.row-label {
+  width: 180px;
+  min-width: 180px;
+  background-color: #161616;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #2a2a2a;
+  font-size: 0.95rem;
+}
+
+/* Row Content (Right Column) */
+.row-content {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  background-color: #1e1e1e;
+}
+
+/* Search Input & Dropdown Wrapper */
+.search-select-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  align-items: center;
+}
+
+#foodSearchInput {
+  width: 100%;
+  padding: 10px 32px 10px 14px; /* Right padding ensures text doesn't slide under the clear button */
+  background-color: #121212;
+  border: 1px solid #333;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+#foodSearchInput:focus {
+  border-color: #555;
+}
+
+/* Clear Search Button Inside Input */
+.clear-search-btn {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0 4px;
+  line-height: 1;
+  z-index: 5;
+  transition: color 0.15s ease;
+}
+
+.clear-search-btn:hover {
+  color: #ffffff;
+}
+
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 220px;
+  overflow-y: auto;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-item {
+  padding: 10px 14px;
+  color: #e0e0e0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.15s;
+}
+
+.dropdown-item:hover {
+  background-color: #2c2c2c;
+  color: #fff;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Selected Food Badge */
+.selected-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #333;
+  border: 1px solid #555;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.base-price-tag {
+  color: #2ecc71;
+}
+
+.btn-clear-badge {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 1.1rem;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0 2px;
+  margin-left: 4px;
+  transition: color 0.15s;
+}
+
+.btn-clear-badge:hover {
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   Rarity Colors for Selected Food Badge
+   ========================================================================== */
+.selected-badge.rarity-common { background-color: #7f8c8d; border-color: #95a5a6; }
+.selected-badge.rarity-uncommon { background-color: #27ae60; border-color: #2ecc71; }
+.selected-badge.rarity-rare { background-color: #2980b9; border-color: #3498db; }
+.selected-badge.rarity-epic { background-color: #8e44ad; border-color: #9b59b6; }
+.selected-badge.rarity-legendary { background-color: #d35400; border-color: #f1c40f; color: #fff; }
+.selected-badge.rarity-mythic { background-color: #c0392b; border-color: #e74c3c; }
+
+/* Number Input */
+.number-input {
+  width: 100px;
+  padding: 8px 12px;
+  background-color: #121212;
+  border: 1px solid #333;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  outline: none;
+}
+
+.number-input:focus {
+  border-color: #555;
+}
+
+.field-hint {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+/* Tag Groups & Buttons */
+.tag-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag-btn {
+  position: relative;
+  padding: 8px 16px;
+  background-color: #121212;
+  color: #888;
+  border: 1px solid #333;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.tag-btn:hover {
+  background-color: #2c2c2c;
+  color: #fff;
+  border-color: #555;
+}
+
+.tag-btn.active {
+  background-color: #383838;
+  color: #ffffff;
+  border-color: #777;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+}
+
+/* Tag Hover Tooltip (Multiplier Display) */
+.tag-btn::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #111;
+  color: #2ecc71;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  border: 1px solid #444;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.15s ease, visibility 0.15s ease;
+  z-index: 20;
+}
+
+.tag-btn:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Output Formula & Result Bar */
+.output-section {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.formula-display {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.formula-label {
+  font-weight: bold;
+  color: #888;
+  font-size: 0.95rem;
+}
+
+#formulaBreakdown {
+  background-color: #121212;
+  color: #2ecc71;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+  border: 1px solid #333;
+  word-break: break-all;
+}
+
+.result-display {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 1px solid #2a2a2a;
+  padding-top: 12px;
+}
+
+.result-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.result-label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.btn-reset-all {
+  background-color: #2c2c2c;
+  color: #e74c3c;
+  border: 1px solid #e74c3c;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-reset-all:hover {
+  background-color: #e74c3c;
+  color: #ffffff;
+}
+
+.price-value {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #f1c40f;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .calc-row {
+    flex-direction: column;
+  }
+  .row-label {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #2a2a2a;
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dish List</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../css/foods.css" />
+  <link rel="stylesheet" href="../css/dishes.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Dish List</h1>
+    <nav class="tab-nav">
+      <a href="../index.html" class="tab-btn">Home</a>
+      <a href="../foods/index.html" class="tab-btn">Food List</a>
+      <a href="./index.html" class="tab-btn active">Dish List</a>
+      <a href="../calculator/index.html" class="tab-btn">Calculator</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="controls">
+    <div class="search-wrapper">
+        <input type="text" id="searchInput" placeholder="Search dish or ingredient..." />
+        <button id="clearSearchBtn" class="clear-btn" title="Clear Search">✕</button>
+    </div>
+
+    <div id="edibleFilterContainer" class="filter-buttons">
+        <button class="filter-btn active" data-edible="All">All</button>
+        <button class="filter-btn" data-edible="Edible">Edible</button>
+        <button class="filter-btn" data-edible="Inedible">Inedible</button>
+    </div>
+
+    <select id="sortOption">
+      <option value="nameAsc">Sort: Name (A - Z)</option>
+      <option value="nameDesc">Sort: Name (Z - A)</option>
+      <option value="timeAsc">Sort: Cook Time (Shortest First)</option>
+      <option value="timeDesc">Sort: Cook Time (Longest First)</option>
+    </select>
+
+    <span id="itemCount" class="item-count">0 Dishes</span>
+    </div>
+
+    <div id="dishGrid" class="grid"></div>
+  </main>
+
+  <script src="../js/dishes.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "regularMutations": [
+    { "id": "rotten", "name": "Rotten", "value": -0.5 },
+    { "id": "imaginary", "name": "Imaginary", "value": 0.0 },
+    { "id": "iced", "name": "Iced", "value": 0.5 },
+    { "id": "heated", "name": "Heated", "value": 0.6 },
+    { "id": "electric", "name": "Electric", "value": 0.9 },
+    { "id": "golden", "name": "Golden", "value": 1.0 },
+    { "id": "chaotic", "name": "Chaotic", "value": 1.3 },
+    { "id": "shadowed", "name": "Shadowed", "value": 3.0 },
+    { "id": "diamond", "name": "Diamond", "value": 4.0 }
+  ],
+  "advancedMutations": [
+    { "id": "soul", "name": "Soul", "value": 4.0 },
+    { "id": "matrix", "name": "Matrix", "value": 4.5 },
+    { "id": "greedy", "name": "Greedy", "value": 3.5 },
+    { "id": "overclocked", "name": "Overclocked", "value": 2.0 },
+    { "id": "eclipse", "name": "Eclipse", "value": 3.8 }
+  ],
+  "specialMutations": [
+    { "id": "celebratory", "name": "Celebratory", "value": 1.0 },
+    { "id": "loved", "name": "Loved", "value": 1.0 },
+    { "id": "rainbow", "name": "Rainbow", "value": 1.0 }
+  ]
+}

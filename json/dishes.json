@@ -1,0 +1,234 @@
+[
+  {
+    "name": "Abyss Blue Drink",
+    "cookTime": "23m 15s",
+    "ingredients": ["Cheap Soda", "Ice Bag", "Lemon", "Mint Leaf"],
+    "effects": ["Currency used to buy summer skins"],
+    "image": "../images/dishes/abyss-blue-drink.png"
+  },
+  {
+    "name": "Apollo's Cookie",
+    "cookTime": "1h 30m 15s",
+    "ingredients": ["Left Face Cookie", "Right Face Cookie"],
+    "effects": ["Greatly increase Gold Bar rates (20 Minutes)"],
+    "image": "../images/dishes/apollos-cookie.png"
+  },
+  {
+    "name": "Borscht",
+    "cookTime": "23m 15s",
+    "ingredients": ["Canned Stew", "Condensed Milk", "Rye Bread", "Tomato Soup"],
+    "effects": ["Warmth Bonus (1 Hour)"],
+    "image": "../images/dishes/borscht.png"
+  },
+  {
+    "name": "The Cake",
+    "cookTime": "23m 15s",
+    "ingredients": ["Bread", "Egg Crate", "Milk"],
+    "effects": ["+20 - 40 Health Points (30 Minutes)"],
+    "image": "../images/dishes/the-cake.png"
+  },
+  {
+    "name": "Caramel Pudding",
+    "cookTime": "4m 25s",
+    "ingredients": ["Canned Pudding", "Syrup"],
+    "effects": ["None"],
+    "image": "../images/dishes/caramel-pudding.png"
+  },
+  {
+    "name": "Cherry Ice Cream",
+    "cookTime": "23m 15s",
+    "ingredients": ["Cherry", "Cream Powder", "Milk Waffle"],
+    "effects": ["Health Regeneration +0.15 - 0.25"],
+    "image": "../images/dishes/cherry-ice-cream.png"
+  },
+  {
+    "name": "Chips",
+    "cookTime": "2m 45s",
+    "ingredients": ["Glimmer Salt", "Olive Oil", "Potato"],
+    "effects": ["None"],
+    "image": "../images/dishes/chips.png"
+  },
+  {
+    "name": "Chocolate Cereal",
+    "cookTime": "4m 25s",
+    "ingredients": ["Chocolate", "Family Size Cereal", "Milk"],
+    "effects": ["None"],
+    "image": "../images/dishes/chocolate-cereal.png"
+  },
+  {
+    "name": "Crocodile Feast",
+    "cookTime": "11m 55s",
+    "ingredients": ["Crocodile Egg (Green)", "Crocodile Tail (Green)"],
+    "effects": ["None"],
+    "image": "../images/dishes/crocodile-feast.png"
+  },
+  {
+    "name": "Donut",
+    "cookTime": "4m 25s",
+    "ingredients": ["Bread", "Sugar Cube", "Syrup"],
+    "effects": ["None"],
+    "image": "../images/dishes/donut.png"
+  },
+  {
+    "name": "Energy Fruit Bowl",
+    "cookTime": "7m 15s",
+    "ingredients": ["Grape", "Half Watermelon", "Strawberry"],
+    "effects": ["+0.5 - 0.8 Speed (30 Minutes)"],
+    "image": "../images/dishes/energy-fruit-bowl.png"
+  },
+  {
+    "name": "Glowing Steak",
+    "cookTime": "4m 25s",
+    "ingredients": ["Fresh Meat", "Luminescent Berries"],
+    "effects": ["None"],
+    "image": "../images/dishes/glowing-steak.png"
+  },
+  {
+    "name": "Gluff Burger",
+    "cookTime": "23m 15s",
+    "ingredients": ["Bread", "Cheese", "Fresh Meat", "Hot Sauce"],
+    "effects": ["None"],
+    "image": "../images/dishes/gluff-burger.png"
+  },
+  {
+    "name": "Gold Fries",
+    "cookTime": "2m 45s",
+    "ingredients": ["Olive Oil", "Potato"],
+    "effects": ["None"],
+    "image": "../images/dishes/gold-fries.png"
+  },
+  {
+    "name": "Golden Fried Rice",
+    "cookTime": "23m 15s",
+    "ingredients": ["Carrot", "Corn", "Egg Crate", "Shrimp"],
+    "effects": ["x2 - 2.8 coins collected (1 Hour) (Removed Effect)"],
+    "image": "../images/dishes/golden-fried-rice.png"
+  },
+  {
+    "name": "Grand Croc Banquet",
+    "cookTime": "11m 55s",
+    "ingredients": ["Crocodile Egg (Red)", "Crocodile Tail (Red)"],
+    "effects": ["None"],
+    "image": "../images/dishes/grand-croc-banquet.png"
+  },
+  {
+    "name": "Grand Jungle Açai Breakfast Bowl",
+    "cookTime": "4m 25s",
+    "ingredients": ["Family Size Cereal", "Luminescent Berries", "Strawberry Lucky O' Milk", "Yogurt"],
+    "effects": ["None"],
+    "image": "../images/dishes/grand-jungle-acai-breakfast-bowl.png"
+  },
+  {
+    "name": "Hoover Stew",
+    "cookTime": "1m 45s",
+    "ingredients": ["Fish Bone", "Potato", "Tomato Soup"],
+    "effects": ["+3 - 6% sell value (3 Minutes)"],
+    "image": "../images/dishes/hoover-stew.png"
+  },
+  {
+    "name": "Love-Filled Chocolate Cake",
+    "cookTime": "23m 15s",
+    "ingredients": ["Honey", "Milk", "Strawberry", "Valentine's Chocolate"],
+    "effects": ["x100% to 250% Loved Affix Chance (1 Hour)"],
+    "image": "../images/dishes/love-filled-chocolate-cake.png"
+  },
+  {
+    "name": "Melted Greasy Marshmallow",
+    "cookTime": "23m 15s",
+    "ingredients": ["Almond Water", "Greasy Marshmallow"],
+    "effects": [
+      "Health ±5 - 10 (30 Minutes)",
+      "Speed +0.5 - 1 (30 Minutes)",
+      "Cold Resistance +1 - 1.5 (30 Minutes)"
+    ],
+    "image": "../images/dishes/melted-greasy-marshmallow.png"
+  },
+  {
+    "name": "Mystery Stew",
+    "cookTime": "1m 45s",
+    "ingredients": ["Anything", "Anything", "Anything", "Anything"],
+    "effects": ["None"],
+    "image": "../images/dishes/mystery-stew.png"
+  },
+  {
+    "name": "Pop Corn",
+    "cookTime": "4m 25s",
+    "ingredients": ["Butter", "Corn", "Syrup"],
+    "effects": ["Stamina Recovery Speed +0.55 - 0.85 (30 Minutes)"],
+    "image": "../images/dishes/pop-corn.png"
+  },
+  {
+    "name": "Prize Chip Cake Tower",
+    "cookTime": "1h 30m 15s",
+    "ingredients": ["Bread", "Cream Powder", "D20 Jelly", "Sugar Cube"],
+    "effects": ["Greedy affixes appearing chance 1.5x - 2.5x (1 Hour)"],
+    "image": "../images/dishes/prize-chip-cake-tower.png"
+  },
+  {
+    "name": "Puff",
+    "cookTime": "4m 25s",
+    "ingredients": ["Bread", "Cream Powder", "Strawberry", "Syrup"],
+    "effects": ["None"],
+    "image": "../images/dishes/puff.png"
+  },
+  {
+    "name": "Pumpkin Soup",
+    "cookTime": "23m 15s",
+    "ingredients": ["Carrot", "Corn", "Imported Caviar", "Pumpkin"],
+    "effects": ["None"],
+    "image": "../images/dishes/pumpkin-soup.png"
+  },
+  {
+    "name": "Revival Pizza",
+    "cookTime": "7m 15s",
+    "ingredients": ["Cheese", "Pizza Crust End", "Tomato"],
+    "effects": ["+20 - 35 Stamina (30 Minutes)"],
+    "image": "../images/dishes/revival-pizza.png"
+  },
+  {
+    "name": "Royal Rations Milkshake",
+    "cookTime": "3h 00m 15s",
+    "ingredients": ["Cream Powder", "Plain Lucky O' Milk", "Royal Rations", "Soul Stone"],
+    "effects": [
+      "+ 1 Inventory Slot (30 Minutes)",
+      "+ 10% Selling Bonus (30 Minutes)",
+      "+10% - 20% Increased Mutation Chances (30 Minutes)"
+    ],
+    "image": "../images/dishes/royal-rations-milkshake.png"
+  },
+  {
+    "name": "Royal Roast Pig",
+    "cookTime": "23m 15s",
+    "ingredients": ["Fresh Meat", "Honey", "Leg Meat", "Roasted Pig"],
+    "effects": ["See enemies through walls (1 Hour)"],
+    "image": "../images/dishes/royal-roast-pig.png"
+  },
+  {
+    "name": "Surf & Turf Skewer",
+    "cookTime": "4m 25s",
+    "ingredients": ["Corn", "Fresh Meat", "Shrimp"],
+    "effects": ["None"],
+    "image": "../images/dishes/surf-and-turf-skewer.png"
+  },
+  {
+    "name": "Ultimate Seafood",
+    "cookTime": "1h 30m 15s",
+    "ingredients": ["Lobster", "Pufferfish", "Shrimp", "Tuna"],
+    "effects": ["+ 10% - 15% chance for affixes (1 Hour)"],
+    "image": "../images/dishes/ultimate-seafood.png"
+  },
+  {
+    "name": "USS Butterscotch",
+    "cookTime": "23m 15s",
+    "ingredients": ["Banana", "Cherry", "Milk", "Waffle"],
+    "effects": ["Health Regeneration +0.15 - 0.25 (1 Hour)"],
+    "image": "../images/dishes/uss-butterscotch.png"
+  },
+  {
+    "name": "Worm Spaghetti",
+    "cookTime": "4m 25s",
+    "ingredients": ["Cheese", "Tomato Soup", "Worm"],
+    "effects": ["None"],
+    "image": "../images/dishes/worm-spaghetti.png"
+  }
+]
