@@ -3,7 +3,7 @@
     "name": "Abyss Blue Drink",
     "cookTime": "23m 15s",
     "ingredients": ["Cheap Soda", "Ice Bag", "Lemon", "Mint Leaf"],
-    "effects": ["Currency used to buy summer skins"],
+    "effects": ["None"],
     "image": "../images/dishes/abyss-blue-drink.png"
   },
   {
