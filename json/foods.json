@@ -34,8 +34,10 @@
   { "name": "Gallon of Water", "rarity": "Uncommon", "value": 54, "image": "../images/foods/uncommon/gallon-of-water.png" },
   { "name": "Salted Fish", "rarity": "Uncommon", "value": 61, "image": "../images/foods/uncommon/salted-fish.png" },
   { "name": "Coffee Beans", "rarity": "Uncommon", "value": 77, "image": "../images/foods/uncommon/coffee-beans.png" },
+  { "name": "Pale Fruit", "rarity": "Uncommon", "value": 45, "image": "../images/foods/uncommon/pale-fruit.png" },
 
   { "name": "Mini Worm", "rarity": "Rare", "value": 45, "image": "../images/foods/rare/mini-worm.png" },
+  { "name": "Dark Vines", "rarity": "Rare", "value": 90, "image": "../images/foods/rare/dark-vines.png" },
   { "name": "Leg Meat", "rarity": "Rare", "value": 45, "image": "../images/foods/rare/leg-meat.png" },
   { "name": "Hot Sauce", "rarity": "Rare", "value": 52, "image": "../images/foods/rare/hot-sauce.png" },
   { "name": "Cheap Soda", "rarity": "Rare", "value": 55, "image": "../images/foods/rare/cheap-soda.png" },
