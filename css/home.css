@@ -194,3 +194,30 @@ footer {
   color: #666;
   font-size: 0.85rem;
 }
+
+/* Output Formula & Result Bar */
+.price-value {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #f1c40f;
+}
+
+/* ==========================================================================
+   Mobile Navigation Fix (Solution 2: Horizontal Scroll)
+   ========================================================================== */
+@media (max-width: 600px) {
+  .tab-nav {
+    display: flex;
+    overflow-x: auto;            /* Enables horizontal scrolling */
+    white-space: nowrap;         /* Keeps buttons on one line */
+    justify-content: flex-start; /* Aligns buttons to the left */
+    padding-bottom: 8px;         /* Prevents scrollbar overlap */
+    -webkit-overflow-scrolling: touch; /* Smooth scroll on iOS */
+  }
+
+  .tab-btn {
+    flex-shrink: 0;             /* Stops buttons from getting squeezed */
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+}

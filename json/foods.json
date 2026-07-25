@@ -98,6 +98,7 @@
   { "name": "D20 Jelly", "rarity": "Legendary", "value": 2269, "image": "../images/foods/legendary/d20-jelly.png" },
   { "name": "Smoked Sausage", "rarity": "Legendary", "value": 3000, "image": "../images/foods/legendary/smoked-sausage.png" },
   { "name": "Dealer Head", "rarity": "Legendary", "value": 3038, "image": "../images/foods/legendary/dealer-head.png" },
+  { "name": "Zero Bloom", "rarity": "Legendary", "value": 1001, "image": "../images/foods/legendary/zero-bloom.png" },
 
   { "name": "Soul Stone", "rarity": "Mythic", "value": 5000, "image": "../images/foods/mythic/soul-stone.png" },
   { "name": "Dreamcore", "rarity": "Mythic", "value": 7888, "image": "../images/foods/mythic/dreamcore.png" },
