@@ -37,7 +37,7 @@
   {
     "name": "Cherry Ice Cream",
     "cookTime": "23m 15s",
-    "ingredients": ["Cherry", "Cream Powder", "Milk Waffle"],
+    "ingredients": ["Cherry", "Cream Powder", "Milk", "Waffle"],
     "effects": ["Health Regeneration +0.15 - 0.25"],
     "image": "../images/dishes/cherry-ice-cream.png"
   },

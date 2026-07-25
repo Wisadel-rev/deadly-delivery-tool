@@ -37,7 +37,7 @@
   { "name": "Pale Fruit", "rarity": "Uncommon", "value": 45, "image": "../images/foods/uncommon/pale-fruit.png" },
 
   { "name": "Mini Worm", "rarity": "Rare", "value": 45, "image": "../images/foods/rare/mini-worm.png" },
-  { "name": "Dark Vines", "rarity": "Rare", "value": 90, "image": "../images/foods/rare/dark-vines.png" },
+  { "name": "Dark Vine", "rarity": "Rare", "value": 90, "image": "../images/foods/rare/dark-vine.png" },
   { "name": "Leg Meat", "rarity": "Rare", "value": 45, "image": "../images/foods/rare/leg-meat.png" },
   { "name": "Hot Sauce", "rarity": "Rare", "value": 52, "image": "../images/foods/rare/hot-sauce.png" },
   { "name": "Cheap Soda", "rarity": "Rare", "value": 55, "image": "../images/foods/rare/cheap-soda.png" },
@@ -62,6 +62,8 @@
   { "name": "Red Mushroom", "rarity": "Rare", "value": 190, "image": "../images/foods/rare/red-mushroom.png" },
 
   { "name": "Cheese", "rarity": "Epic", "value": 130, "image": "../images/foods/epic/cheese.png" },
+  { "name": "Void Slime", "rarity": "Epic", "value": 476, "image": "../images/foods/epic/void-slime.png" },
+  { "name": "Eclipse Crystal", "rarity": "Epic", "value": 309, "image": "../images/foods/epic/eclipse-crystal.png" },
   { "name": "Shrimp", "rarity": "Epic", "value": 166, "image": "../images/foods/epic/shrimp.png" },
   { "name": "Cinnamon Roll", "rarity": "Epic", "value": 199, "image": "../images/foods/epic/cinnamon-roll.png" },
   { "name": "Macaron", "rarity": "Epic", "value": 200, "image": "../images/foods/epic/macaron.png" },
