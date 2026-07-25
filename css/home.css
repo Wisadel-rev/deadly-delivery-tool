@@ -77,7 +77,7 @@ h1 {
 }
 
 /* ==========================================================================
-   Tools Grid Layout (Reference Image Style)
+   Tools Grid Layout
    ========================================================================== */
 .tools-grid {
   display: grid;
@@ -176,11 +176,72 @@ h1 {
   color: #777;
 }
 
-/* Responsive Tweaks */
-@media (max-width: 768px) {
-  .tools-grid {
-    grid-template-columns: 1fr;
-  }
+/* ==========================================================================
+   To-Do List / Roadmap Section
+   ========================================================================== */
+.todo-section {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.todo-card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 20px 24px;
+}
+
+.todo-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+  padding: 10px 14px;
+  background-color: #121212;
+  border-radius: 6px;
+  border: 1px solid #2a2a2a;
+}
+
+.todo-icon {
+  font-size: 1rem;
+  font-weight: bold;
+  min-width: 24px;
+  text-align: center;
+}
+
+.status-done {
+  color: #a0a0a0;
+}
+
+.status-done .todo-icon {
+  color: #2ecc71;
+}
+
+.status-done .todo-text {
+  text-decoration: line-through;
+}
+
+.status-pending .todo-icon {
+  color: #f1c40f;
+}
+
+.status-pending .todo-text {
+  color: #ffffff;
+}
+
+.status-planned .todo-icon {
+  color: #3498db;
+}
+
+.status-planned .todo-text {
+  color: #888888;
 }
 
 /* ==========================================================================
@@ -203,8 +264,14 @@ footer {
 }
 
 /* ==========================================================================
-   Mobile Navigation Fix (Solution 2: Horizontal Scroll)
+   Responsive & Mobile Navigation Fix
    ========================================================================== */
+@media (max-width: 768px) {
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 600px) {
   .tab-nav {
     display: flex;
