@@ -12,13 +12,13 @@
         { "name": "Intern", "rarity": "Rare", "image": "../images/skins/classes/rare/intern.png" },
         { "name": "Christmas", "rarity": "Rare", "image": "../images/skins/classes/rare/christmas-r.png" },
         { "name": "Camp Know Where", "rarity": "Rare", "image": "../images/skins/classes/rare/camp-know-where.png" },
-        { "name": "Saltwave", "rarity": "Rare", "image": "../images/skins/classes/rare/saltwave.png" }
+        { "name": "Saltwave", "rarity": "Rare", "image": "../images/skins/classes/rare/saltwave.png" },
+        { "name": "Plague Doctor", "rarity": "Epic", "image": "../images/skins/classes/epic/plague-doctor.png" }
       ]
     },
     {
       "class": "Escape Artist",
       "skins": [
-        { "name": "Plague Doctor", "rarity": "Epic", "image": "../images/skins/classes/epic/plague-doctor.png" },
         { "name": "Vamp", "rarity": "Legendary", "image": "../images/skins/classes/legendary/vamp.png" }
       ]
     },
