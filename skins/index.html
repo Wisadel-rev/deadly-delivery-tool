@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skins</title>
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/skins.css">
+</head>
+<body>
+
+  <!-- Navigation / Header aligned with main site -->
+  <header class="main-header">
+    <div class="header-content">
+      <h1 class="logo">Skins Gallery</h1>
+      <nav class="tab-nav">
+        <a href="../" class="tab-btn">Home</a>
+        <a href="../foods/" class="tab-btn">Food List</a>
+        <a href="../dishes/" class="tab-btn">Dish List</a>
+        <a href="../calculator/" class="tab-btn">Calculator</a>
+        <a href="./" class="tab-btn active">Skins</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="home-container">
+    
+    <div class="page-title-section">
+      <h2>Skins Gallery</h2>
+      <p class="subtitle">Browse, search, and filter class and gear cosmetics.</p>
+    </div>
+
+    <!-- Controls Bar: Category Toggle, Search, and Rarity Filters -->
+    <section class="controls-section">
+      
+      <!-- Category Switcher -->
+      <div class="category-toggle">
+        <button class="toggle-btn active" data-category="classes">Class Skins</button>
+        <button class="toggle-btn" data-category="gear">Gear Skins</button>
+      </div>
+
+      <!-- Search Input & Rarity Filter Row -->
+      <div class="filter-bar">
+        <div class="search-wrapper">
+          <input 
+            type="text" 
+            id="skin-search" 
+            placeholder="Search skin or class name..." 
+            autocomplete="off"
+          >
+        </div>
+
+        <div class="rarity-filters">
+          <button class="filter-chip active" data-rarity="all">All</button>
+          <button class="filter-chip uncommon" data-rarity="Uncommon">Uncommon</button>
+          <button class="filter-chip rare" data-rarity="Rare">Rare</button>
+          <button class="filter-chip epic" data-rarity="Epic">Epic</button>
+          <button class="filter-chip legendary" data-rarity="Legendary">Legendary</button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Gallery Header with Counter Badge -->
+    <div class="gallery-header">
+      <h3 class="gallery-title" id="gallery-title">Class Skins</h3>
+      <span class="skins-count-badge" id="skins-count">Showing 0 skins</span>
+    </div>
+
+    <!-- Skins Display Container -->
+    <section id="skins-grid-container">
+      <!-- Dynamic content rendered by skins.js -->
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Wisadel's Toolbox &copy; 2026 • Game Reference & Value Calculator</p>
+  </footer>
+
+  <script src="../js/skins.js"></script>
+</body>
+</html>

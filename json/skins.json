@@ -1,0 +1,202 @@
+{
+  "classes": [
+    {
+      "class": "Odd Jobber",
+      "skins": [
+        { "name": "Wcdonalds", "rarity": "Uncommon", "image": "../images/skins/classes/uncommon/wcdonalds.png" }
+      ]
+    },
+    {
+      "class": "Veterinarian",
+      "skins": [
+        { "name": "Intern", "rarity": "Rare", "image": "../images/skins/classes/rare/intern.png" },
+        { "name": "Christmas", "rarity": "Rare", "image": "../images/skins/classes/rare/christmas-r.png" },
+        { "name": "Camp Know Where", "rarity": "Rare", "image": "../images/skins/classes/rare/camp-know-where.png" },
+        { "name": "Saltwave", "rarity": "Rare", "image": "../images/skins/classes/rare/saltwave.png" }
+      ]
+    },
+    {
+      "class": "Escape Artist",
+      "skins": [
+        { "name": "Plague Doctor", "rarity": "Epic", "image": "../images/skins/classes/epic/plague-doctor.png" },
+        { "name": "Vamp", "rarity": "Legendary", "image": "../images/skins/classes/legendary/vamp.png" }
+      ]
+    },
+    {
+      "class": "Chef",
+      "skins": [
+        { "name": "Tidegrill", "rarity": "Rare", "image": "../images/skins/classes/rare/tidegrill.png" },
+        { "name": "Wild", "rarity": "Epic", "image": "../images/skins/classes/epic/wild.png" }
+      ]
+    },
+    {
+      "class": "Sprinter",
+      "skins": [
+        { "name": "Hellfire", "rarity": "Rare", "image": "../images/skins/classes/rare/hellfire.png" },
+        { "name": "Christmas", "rarity": "Epic", "image": "../images/skins/classes/epic/christmas-e.png" },
+        { "name": "Pheidppides", "rarity": "Epic", "image": "../images/skins/classes/epic/pheidppides.png" }
+      ]
+    },
+    {
+      "class": "Baseballer",
+      "skins": [
+        { "name": "Street", "rarity": "Rare", "image": "../images/skins/classes/rare/street.png" },
+        { "name": "Super Babysitter", "rarity": "Epic", "image": "../images/skins/classes/epic/super-babysitter.png" }
+      ]
+    },
+    {
+      "class": "Psionic",
+      "skins": [
+        { "name": "Tide Resonant", "rarity": "Uncommon", "image": "../images/skins/classes/uncommon/tide-resonant.png" }
+      ]
+    },
+    {
+      "class": "Porter",
+      "skins": [
+        { "name": "Christmas", "rarity": "Legendary", "image": "../images/skins/classes/legendary/christmas-l.png" },
+        { "name": "Hermes", "rarity": "Legendary", "image": "../images/skins/classes/legendary/hermes.png" }
+      ]
+    },
+    {
+      "class": "Veteran",
+      "skins": [
+        { "name": "Coastal Remnant", "rarity": "Rare", "image": "../images/skins/classes/rare/coastal-remnant.png" },
+        { "name": "Mercenary", "rarity": "Rare", "image": "../images/skins/classes/rare/mercenary.png" },
+        { "name": "The Prisoner", "rarity": "Epic", "image": "../images/skins/classes/epic/the-prisoner.png" },
+        { "name": "Polar Agents", "rarity": "Legendary", "image": "../images/skins/classes/legendary/polar-agents.png" },
+        { "name": "Blade Runner", "rarity": "Legendary", "image": "../images/skins/classes/legendary/blade-runner.png" }
+      ]
+    },
+    {
+      "class": "Health Inspector",
+      "skins": [
+        { "name": "Plague Matron", "rarity": "Epic", "image": "../images/skins/classes/epic/plague-matron.png" },
+        { "name": "Gala", "rarity": "Legendary", "image": "../images/skins/classes/legendary/gala.png" },
+        { "name": "Daphne", "rarity": "Legendary", "image": "../images/skins/classes/legendary/daphne.png" }
+      ]
+    },
+    {
+      "class": "Miner",
+      "skins": [
+        { "name": "Abyss Diver", "rarity": "Legendary", "image": "../images/skins/classes/legendary/abyss-diver.png" }
+      ]
+    },
+    {
+      "class": "Gambler",
+      "skins": [
+        { "name": "Neon Tide", "rarity": "Legendary", "image": "../images/skins/classes/legendary/neon-tide.png" }
+      ]
+    },
+    {
+      "class": "Subject G",
+      "skins": [
+        { "name": "Hades", "rarity": "Epic", "image": "../images/skins/classes/epic/hades.png" },
+        { "name": "Mist Ghost", "rarity": "Epic", "image": "../images/skins/classes/epic/mist-ghost.png" }
+      ]
+    },
+    {
+      "class": "Exterminator",
+      "skins": [
+        { "name": "Crimson Executor", "rarity": "Rare", "image": "../images/skins/classes/rare/crimson-executor.png" },
+        { "name": "Prometheus", "rarity": "Legendary", "image": "../images/skins/classes/legendary/prometheus.png" }
+      ]
+    },
+    {
+      "class": "Cupid",
+      "skins": [
+        { "name": "Heart Drift", "rarity": "Rare", "image": "../images/skins/classes/rare/heart-drift.png" },
+        { "name": "Apollo", "rarity": "Legendary", "image": "../images/skins/classes/legendary/apollo.png" }
+      ]
+    },
+    {
+      "class": "SPY",
+      "skins": [
+        { "name": "Agent", "rarity": "Uncommon", "image": "../images/skins/classes/uncommon/agent.png" },
+        { "name": "Spy", "rarity": "Epic", "image": "../images/skins/classes/epic/spy.png" }
+      ]
+    },
+    {
+      "class": "Madness",
+      "skins": [
+        { "name": "Dormant", "rarity": "Rare", "image": "../images/skins/classes/rare/dormant.png" }
+      ]
+    }
+  ],
+  "gear": [
+    {
+      "gear": "Flashlight",
+      "skins": [
+        { "name": "Purple Flashlight", "rarity": "Uncommon", "image": "../images/skins/gear/uncommon/purple-flashlight.png" },
+        { "name": "Festive Flashlight", "rarity": "Rare", "image": "../images/skins/gear/rare/festive-flashlight.png" },
+        { "name": "Old Lantern", "rarity": "Rare", "image": "../images/skins/gear/rare/old-lantern.png" }
+      ]
+    },
+    {
+      "gear": "Bandage",
+      "skins": [
+        { "name": "Medkit", "rarity": "Uncommon", "image": "../images/skins/gear/uncommon/medkit.png" },
+        { "name": "Painkillers", "rarity": "Rare", "image": "../images/skins/gear/rare/painkillers.png" }
+      ]
+    },
+    {
+      "gear": "Box",
+      "skins": []
+    },
+    {
+      "gear": "Bloxy Cola",
+      "skins": []
+    },
+    {
+      "gear": "Hourglass",
+      "skins": []
+    },
+    {
+      "gear": "Molotov",
+      "skins": []
+    },
+    {
+      "gear": "Revive Syringe",
+      "skins": []
+    },
+    {
+      "gear": "Baseball Bat",
+      "skins": [
+        { "name": "Steve's Baseball Bat", "rarity": "Uncommon", "image": "../images/skins/gear/uncommon/steves-baseball-bat.png" },
+        { "name": "Guitar", "rarity": "Uncommon", "image": "../images/skins/gear/uncommon/guitar.png" },
+        { "name": "Spiked Club", "rarity": "Rare", "image": "../images/skins/gear/rare/spiked-club.png" },
+        { "name": "Weird Sword", "rarity": "Rare", "image": "../images/skins/gear/rare/weird-sword.png" }
+      ]
+    },
+    {
+      "gear": "Teleporter",
+      "skins": [
+        { "name": "Snow Globe", "rarity": "Rare", "image": "../images/skins/gear/rare/snow-globe.png" }
+      ]
+    },
+    {
+      "gear": "Random Teleporter",
+      "skins": []
+    },
+    {
+      "gear": "Stun Grenade",
+      "skins": [
+        { "name": "Flash Camera", "rarity": "Epic", "image": "../images/skins/gear/epic/flash-camera.png" }
+      ]
+    },
+    {
+      "gear": "The Trap",
+      "skins": []
+    },
+    {
+      "gear": "Bio-Scanner",
+      "skins": []
+    },
+    {
+      "gear": "Z-Ray Gun",
+      "skins": [
+        { "name": "Rainbow Pony Gun", "rarity": "Legendary", "image": "../images/skins/gear/legendary/rainbow-pony-gun.png" },
+        { "name": "Christmas Gun", "rarity": "Legendary", "image": "../images/skins/gear/legendary/christmas-gun.png" }
+      ]
+    }
+  ]
+}

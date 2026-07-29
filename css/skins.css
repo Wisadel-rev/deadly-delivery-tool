@@ -1,0 +1,285 @@
+/* ==========================================================================
+   SKINS GALLERY STYLES
+   ========================================================================== */
+
+/* --- Rarity Color Variables --- */
+:root {
+  --rarity-uncommon: #2ecc71;
+  --rarity-uncommon-glow: rgba(46, 204, 113, 0.35);
+  
+  --rarity-rare: #3498db;
+  --rarity-rare-glow: rgba(52, 152, 219, 0.35);
+  
+  --rarity-epic: #a044ff;
+  --rarity-epic-glow: rgba(160, 68, 255, 0.4);
+  
+  --rarity-legendary: #f39c12;
+  --rarity-legendary-glow: rgba(243, 156, 18, 0.45);
+  
+  /* Standardized to match home.css */
+  --card-bg: #1e1e1e;
+  --card-border: #2a2a2a;
+  --card-bg-dark: #121212;
+  --text-muted: #888888;
+}
+
+/* --- Controls & Filter Section --- */
+.controls-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--card-border);
+}
+
+.category-toggle {
+  display: flex;
+  gap: 10px;
+}
+
+.toggle-btn {
+  flex: 1;
+  padding: 10px 20px;
+  border: 1px solid var(--card-border);
+  background: var(--card-bg-dark);
+  color: var(--text-muted);
+  font-weight: bold;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.toggle-btn.active,
+.toggle-btn:hover {
+  background: #333333;
+  color: #ffffff;
+  border-color: #555555;
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.search-wrapper {
+  flex: 1 1 240px;
+}
+
+#skin-search {
+  width: 100%;
+  padding: 10px 14px;
+  background: var(--card-bg-dark);
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+#skin-search:focus {
+  border-color: #555555;
+}
+
+/* --- Rarity Filter Chips --- */
+.rarity-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-chip {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--card-border);
+  background: var(--card-bg-dark);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-chip.active {
+  color: #ffffff;
+  border-color: currentColor;
+  box-shadow: 0 0 10px currentColor;
+}
+
+.filter-chip.uncommon { color: var(--rarity-uncommon); }
+.filter-chip.rare { color: var(--rarity-rare); }
+.filter-chip.epic { color: var(--rarity-epic); }
+.filter-chip.legendary { color: var(--rarity-legendary); }
+
+.filter-chip:hover {
+  opacity: 0.85;
+}
+
+/* --- Gallery Header & Counter Badge --- */
+.gallery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.gallery-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.skins-count-badge {
+  background: var(--card-bg);
+  color: var(--text-muted);
+  border: 1px solid var(--card-border);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* --- Grid & Grouping Layout --- */
+.class-group {
+  margin-bottom: 35px;
+}
+
+.class-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #e0e0e0;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--card-border);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skins-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+/* --- Skin Card Component --- */
+.skin-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.skin-card:hover {
+  transform: translateY(-4px);
+}
+
+.skin-img-wrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: var(--card-bg-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 12px;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.skin-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.skin-card:hover img {
+  transform: scale(1.05);
+}
+
+.skin-info {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: var(--card-bg);
+}
+
+.skin-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.skin-rarity-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* --- Dynamic Rarity Border & Glow Styling --- */
+.skin-card.uncommon {
+  border-color: var(--rarity-uncommon);
+}
+.skin-card.uncommon:hover {
+  box-shadow: 0 4px 15px var(--rarity-uncommon-glow);
+}
+.skin-card.uncommon .skin-rarity-tag {
+  color: var(--rarity-uncommon);
+}
+
+.skin-card.rare {
+  border-color: var(--rarity-rare);
+}
+.skin-card.rare:hover {
+  box-shadow: 0 4px 15px var(--rarity-rare-glow);
+}
+.skin-card.rare .skin-rarity-tag {
+  color: var(--rarity-rare);
+}
+
+.skin-card.epic {
+  border-color: var(--rarity-epic);
+}
+.skin-card.epic:hover {
+  box-shadow: 0 4px 15px var(--rarity-epic-glow);
+}
+.skin-card.epic .skin-rarity-tag {
+  color: var(--rarity-epic);
+}
+
+.skin-card.legendary {
+  border-color: var(--rarity-legendary);
+}
+.skin-card.legendary:hover {
+  box-shadow: 0 4px 18px var(--rarity-legendary-glow);
+}
+.skin-card.legendary .skin-rarity-tag {
+  color: var(--rarity-legendary);
+}
+
+/* --- Empty / No Results State --- */
+.no-results {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-muted);
+  font-size: 1rem;
+  background: var(--card-bg);
+  border-radius: 8px;
+  border: 1px dashed var(--card-border);
+}
