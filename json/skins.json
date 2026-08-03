@@ -9,9 +9,9 @@
     {
       "class": "Veterinarian",
       "skins": [
-        { "name": "Intern", "rarity": "Rare", "image": "../images/skins/classes/rare/intern.png" },
-        { "name": "Christmas", "rarity": "Rare", "image": "../images/skins/classes/rare/christmas-r.png" },
         { "name": "Camp Know Where", "rarity": "Rare", "image": "../images/skins/classes/rare/camp-know-where.png" },
+        { "name": "Christmas", "rarity": "Rare", "image": "../images/skins/classes/rare/christmas-r.png" },
+        { "name": "Intern", "rarity": "Rare", "image": "../images/skins/classes/rare/intern.png" },
         { "name": "Saltwave", "rarity": "Rare", "image": "../images/skins/classes/rare/saltwave.png" },
         { "name": "Plague Doctor", "rarity": "Epic", "image": "../images/skins/classes/epic/plague-doctor.png" }
       ]
@@ -19,6 +19,7 @@
     {
       "class": "Escape Artist",
       "skins": [
+        { "name": "Tide Breaker", "rarity": "Epic", "image": "../images/skins/classes/epic/tide-breaker.png" },
         { "name": "Vamp", "rarity": "Legendary", "image": "../images/skins/classes/legendary/vamp.png" }
       ]
     },
@@ -34,13 +35,15 @@
       "skins": [
         { "name": "Hellfire", "rarity": "Rare", "image": "../images/skins/classes/rare/hellfire.png" },
         { "name": "Christmas", "rarity": "Epic", "image": "../images/skins/classes/epic/christmas-e.png" },
-        { "name": "Pheidppides", "rarity": "Epic", "image": "../images/skins/classes/epic/pheidppides.png" }
+        { "name": "Pheidppides", "rarity": "Epic", "image": "../images/skins/classes/epic/pheidppides.png" },
+        { "name": "Riptide", "rarity": "Epic", "image": "../images/skins/classes/epic/riptide.png" }
       ]
     },
     {
       "class": "Baseballer",
       "skins": [
         { "name": "Street", "rarity": "Rare", "image": "../images/skins/classes/rare/street.png" },
+        { "name": "Sandstrike", "rarity": "Epic", "image": "../images/skins/classes/epic/sandstrike.png" },
         { "name": "Super Babysitter", "rarity": "Epic", "image": "../images/skins/classes/epic/super-babysitter.png" }
       ]
     },
@@ -53,6 +56,7 @@
     {
       "class": "Porter",
       "skins": [
+        { "name": "Ducky", "rarity": "Epic", "image": "../images/skins/classes/epic/ducky.png" },
         { "name": "Christmas", "rarity": "Legendary", "image": "../images/skins/classes/legendary/christmas-l.png" },
         { "name": "Hermes", "rarity": "Legendary", "image": "../images/skins/classes/legendary/hermes.png" }
       ]
@@ -63,16 +67,17 @@
         { "name": "Coastal Remnant", "rarity": "Rare", "image": "../images/skins/classes/rare/coastal-remnant.png" },
         { "name": "Mercenary", "rarity": "Rare", "image": "../images/skins/classes/rare/mercenary.png" },
         { "name": "The Prisoner", "rarity": "Epic", "image": "../images/skins/classes/epic/the-prisoner.png" },
-        { "name": "Polar Agents", "rarity": "Legendary", "image": "../images/skins/classes/legendary/polar-agents.png" },
-        { "name": "Blade Runner", "rarity": "Legendary", "image": "../images/skins/classes/legendary/blade-runner.png" }
+        { "name": "Blade Runner", "rarity": "Legendary", "image": "../images/skins/classes/legendary/blade-runner.png" },
+        { "name": "Polar Agents", "rarity": "Legendary", "image": "../images/skins/classes/legendary/polar-agents.png" }
       ]
     },
     {
       "class": "Health Inspector",
       "skins": [
+        { "name": "Mist Warden", "rarity": "Epic", "image": "../images/skins/classes/epic/mist-warden.png" },
         { "name": "Plague Matron", "rarity": "Epic", "image": "../images/skins/classes/epic/plague-matron.png" },
-        { "name": "Gala", "rarity": "Legendary", "image": "../images/skins/classes/legendary/gala.png" },
-        { "name": "Daphne", "rarity": "Legendary", "image": "../images/skins/classes/legendary/daphne.png" }
+        { "name": "Daphne", "rarity": "Legendary", "image": "../images/skins/classes/legendary/daphne.png" },
+        { "name": "Gala", "rarity": "Legendary", "image": "../images/skins/classes/legendary/gala.png" }
       ]
     },
     {
@@ -112,6 +117,7 @@
       "class": "SPY",
       "skins": [
         { "name": "Agent", "rarity": "Uncommon", "image": "../images/skins/classes/uncommon/agent.png" },
+        { "name": "Blueveil", "rarity": "Epic", "image": "../images/skins/classes/epic/blueveil.png" },
         { "name": "Spy", "rarity": "Epic", "image": "../images/skins/classes/epic/spy.png" }
       ]
     },
