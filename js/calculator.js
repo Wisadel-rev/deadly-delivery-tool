@@ -268,6 +268,22 @@ function resetAll() {
   resetMutations();
 }
 
+// Helper: Handles validation & normalization for the Size Factor input
+function handleSizeCommit() {
+  const rawValue = sizeInput.value.trim();
+
+  if (rawValue === "" || isNaN(rawValue)) {
+    sizeInput.value = 1;
+  } else {
+    let size = parseFloat(rawValue);
+    if (size < 0.25) size = 0.25;
+    if (size > 4.0) size = 4.0;
+    sizeInput.value = size;
+  }
+
+  calculatePrice();
+}
+
 // 6. Calculate Final Price and Display Formula
 function calculatePrice() {
   const basePrice = selectedFood ? parseFloat(selectedFood.price) : 0;
@@ -445,14 +461,18 @@ function setupEventListeners() {
   if (resetMutationsBtn) resetMutationsBtn.addEventListener("click", resetMutations);
   if (resetAllBtn) resetAllBtn.addEventListener("click", resetAll);
 
+  // --- SIZE INPUT LISTENERS ---
   sizeInput.addEventListener("input", calculatePrice);
-  sizeInput.addEventListener("blur", () => {
-    let size = parseFloat(sizeInput.value);
-    if (isNaN(size) || size < 0.25) size = 0.25;
-    if (size > 4.0) size = 4.0;
-    sizeInput.value = size;
-    calculatePrice();
+
+  sizeInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      handleSizeCommit();
+      sizeInput.blur();
+    }
   });
+
+  sizeInput.addEventListener("blur", handleSizeCommit);
 
   // Hotkey: Press ESC to reset everything
   document.addEventListener("keydown", (e) => {
