@@ -18,8 +18,8 @@
     { "id": "eclipse", "name": "Eclipse", "value": 3.8 }
   ],
   "specialMutations": [
-    { "id": "celebratory", "name": "Celebratory", "value": 1.0 },
-    { "id": "loved", "name": "Loved", "value": 1.0 },
-    { "id": "rainbow", "name": "Rainbow", "value": 1.0 }
+    { "id": "celebratory", "name": "Celebratory", "value": 3.0 },
+    { "id": "loved", "name": "Loved", "value": 3.0 },
+    { "id": "rainbow", "name": "Rainbow", "value": 3.0 }
   ]
 }

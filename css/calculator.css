@@ -118,7 +118,7 @@ h1 {
 #foodSearchInput,
 #mutationSearchInput {
   width: 100%;
-  padding: 10px 32px 10px 14px; /* Right padding ensures text doesn't slide under the clear button */
+  padding: 10px 32px 10px 14px; /* Right padding ensures text doesn't slide under clear button */
   background-color: #121212;
   border: 1px solid #333;
   border-radius: 6px;
@@ -342,7 +342,9 @@ h1 {
   visibility: visible;
 }
 
-/* Output Formula & Result Bar */
+/* ==========================================================================
+   Output Formula & Result Bar
+   ========================================================================== */
 .output-section {
   background-color: #1e1e1e;
   border: 1px solid #333;
@@ -368,13 +370,79 @@ h1 {
 
 #formulaBreakdown {
   background-color: #121212;
-  color: #2ecc71;
-  padding: 6px 12px;
-  border-radius: 4px;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 0.95rem;
+  padding: 10px 14px;
+  border-radius: 6px;
   border: 1px solid #333;
   word-break: break-all;
+}
+
+/* Formula Container & Column Stack */
+.formula-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.formula-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Category Text Labels Above Formula Terms */
+.formula-label-text {
+  font-size: 0.72rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.label-base { color: #3498db; }
+.label-regular { color: #2ecc71; }
+.label-advanced { color: #9b59b6; }
+.label-special { color: #f1c40f; }
+
+/* Multiplication Operators */
+.formula-operator {
+  color: #888;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 16px; /* Aligns visually with the terms */
+}
+
+/* Term Badges */
+.formula-term {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+}
+
+.term-base {
+  color: #3498db;
+  background-color: rgba(52, 152, 219, 0.12);
+  border: 1px solid rgba(52, 152, 219, 0.3);
+}
+
+.term-regular {
+  color: #2ecc71;
+  background-color: rgba(46, 204, 113, 0.12);
+  border: 1px solid rgba(46, 204, 113, 0.3);
+}
+
+.term-advanced {
+  color: #9b59b6;
+  background-color: rgba(155, 89, 182, 0.12);
+  border: 1px solid rgba(155, 89, 182, 0.3);
+}
+
+.term-special {
+  color: #f1c40f;
+  background-color: rgba(241, 196, 15, 0.12);
+  border: 1px solid rgba(241, 196, 15, 0.3);
 }
 
 .result-display {

@@ -64,7 +64,7 @@ async function loadData() {
 function initUI() {
   renderTags(mutationData.regularMutations, regularContainer, selectedRegulars, "+");
   renderTags(mutationData.advancedMutations, advancedContainer, selectedAdvanced, "+");
-  renderTags(mutationData.specialMutations, specialContainer, selectedSpecials, "^");
+  renderTags(mutationData.specialMutations, specialContainer, selectedSpecials, "*");
 
   setupEventListeners();
   calculatePrice();
@@ -81,9 +81,8 @@ function renderTags(mutationsList, container, stateSet, symbol) {
     btn.dataset.id = mut.id;
 
     let formattedTooltip = "";
-    if (symbol === "^") {
-      const multiplier = Math.pow(3, mut.value);
-      formattedTooltip = `x${multiplier}`;
+    if (symbol === "*") {
+      formattedTooltip = `x${mut.value}`;
     } else {
       const multiplier = 1 + mut.value;
       formattedTooltip = `x${multiplier}`;
@@ -292,33 +291,75 @@ function calculatePrice() {
   if (isNaN(size)) size = 1.0;
   size = Math.min(Math.max(size, 0.25), 4.0);
 
+  // Regular Mutations Sum (Additive)
   let regSum = 0;
   selectedRegulars.forEach(id => {
     const item = mutationData.regularMutations.find(m => m.id === id);
     if (item) regSum += item.value;
   });
 
+  // Advanced Mutations Sum (Additive)
   let advSum = 0;
   selectedAdvanced.forEach(id => {
     const item = mutationData.advancedMutations.find(m => m.id === id);
     if (item) advSum += item.value;
   });
 
-  let specSum = 0;
+  // Special Mutations Product (Multiplicative)
+  let specMult = 1;
+  const specValues = [];
   selectedSpecials.forEach(id => {
     const item = mutationData.specialMutations.find(m => m.id === id);
-    if (item) specSum += item.value;
+    if (item) {
+      specMult *= item.value;
+      specValues.push(item.value);
+    }
   });
 
   const basePart = basePrice * size;
   const regTerm = 1 + regSum;
   const advTerm = 1 + advSum;
-  const specTerm = Math.pow(3, specSum);
+  const specTerm = specMult;
 
   const finalPrice = basePart * regTerm * advTerm * specTerm;
 
-  const breakdownStr = `(${basePrice} x ${size}) x (1 + ${regSum}) x (1 + ${advSum}) x 3^(${specSum})`;
-  formulaBreakdown.textContent = breakdownStr;
+  // Build HTML blocks with section labels above the terms
+  const baseBlock = `
+    <div class="formula-block">
+      <span class="formula-label-text label-base">Base & Size</span>
+      <span class="formula-term term-base">(${basePrice} x ${size})</span>
+    </div>
+  `;
+
+  const regBlock = `
+    <div class="formula-block">
+      <span class="formula-label-text label-regular">Regular</span>
+      <span class="formula-term term-regular">(1 + ${regSum})</span>
+    </div>
+  `;
+
+  const advBlock = `
+    <div class="formula-block">
+      <span class="formula-label-text label-advanced">Advanced</span>
+      <span class="formula-term term-advanced">(1 + ${advSum})</span>
+    </div>
+  `;
+  
+  const specStr = specValues.length > 0 ? specValues.join(" x ") : "1";
+  const specBlock = `
+    <div class="formula-block">
+      <span class="formula-label-text label-special">Special</span>
+      <span class="formula-term term-special">(${specStr})</span>
+    </div>
+  `;
+
+  const operator = `<span class="formula-operator">&times;</span>`;
+
+  formulaBreakdown.innerHTML = `
+    <div class="formula-container">
+      ${baseBlock} ${operator} ${regBlock} ${operator} ${advBlock} ${operator} ${specBlock}
+    </div>
+  `;
 
   finalPriceOutput.textContent = `$${finalPrice.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
 }
