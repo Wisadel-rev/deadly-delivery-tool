@@ -167,8 +167,9 @@
 
 .skins-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 16px;
+  /* Reduced min-width from 180px to 140px for a much tighter grid */
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
 }
 
 /* --- Skin Card Component --- */
@@ -184,7 +185,7 @@
 }
 
 .skin-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
 }
 
 .skin-img-wrapper {
@@ -195,7 +196,8 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: 12px;
+  /* Reduced internal padding around image from 12px to 6px */
+  padding: 6px;
   border-bottom: 1px solid var(--card-border);
 }
 
@@ -211,22 +213,24 @@
 }
 
 .skin-info {
-  padding: 12px;
+  /* Tightened padding inside text container */
+  padding: 8px 10px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
   background: var(--card-bg);
 }
 
 .skin-name {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 700;
   color: #ffffff;
   margin: 0;
+  line-height: 1.2;
 }
 
 .skin-rarity-tag {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -237,7 +241,7 @@
   border-color: var(--rarity-uncommon);
 }
 .skin-card.uncommon:hover {
-  box-shadow: 0 4px 15px var(--rarity-uncommon-glow);
+  box-shadow: 0 4px 12px var(--rarity-uncommon-glow);
 }
 .skin-card.uncommon .skin-rarity-tag {
   color: var(--rarity-uncommon);
@@ -247,7 +251,7 @@
   border-color: var(--rarity-rare);
 }
 .skin-card.rare:hover {
-  box-shadow: 0 4px 15px var(--rarity-rare-glow);
+  box-shadow: 0 4px 12px var(--rarity-rare-glow);
 }
 .skin-card.rare .skin-rarity-tag {
   color: var(--rarity-rare);
@@ -257,7 +261,7 @@
   border-color: var(--rarity-epic);
 }
 .skin-card.epic:hover {
-  box-shadow: 0 4px 15px var(--rarity-epic-glow);
+  box-shadow: 0 4px 12px var(--rarity-epic-glow);
 }
 .skin-card.epic .skin-rarity-tag {
   color: var(--rarity-epic);
@@ -267,7 +271,7 @@
   border-color: var(--rarity-legendary);
 }
 .skin-card.legendary:hover {
-  box-shadow: 0 4px 18px var(--rarity-legendary-glow);
+  box-shadow: 0 4px 14px var(--rarity-legendary-glow);
 }
 .skin-card.legendary .skin-rarity-tag {
   color: var(--rarity-legendary);
@@ -282,4 +286,31 @@
   background: var(--card-bg);
   border-radius: 8px;
   border: 1px dashed var(--card-border);
+}
+
+/* ==========================================================================
+   Mobile Responsive Adjustments
+   ========================================================================== */
+@media (max-width: 600px) {
+  .skins-grid {
+    /* Compact 2-column or 3-column layout on smaller screens */
+    grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
+    gap: 8px;
+  }
+
+  .skin-img-wrapper {
+    padding: 4px;
+  }
+
+  .skin-info {
+    padding: 6px 8px;
+  }
+
+  .skin-name {
+    font-size: 0.78rem;
+  }
+
+  .skin-rarity-tag {
+    font-size: 0.65rem;
+  }
 }
