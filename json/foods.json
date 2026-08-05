@@ -35,6 +35,7 @@
   { "name": "Salted Fish", "rarity": "Uncommon", "value": 61, "image": "../images/foods/uncommon/salted-fish.png" },
   { "name": "Coffee Beans", "rarity": "Uncommon", "value": 77, "image": "../images/foods/uncommon/coffee-beans.png" },
   { "name": "Pale Fruit", "rarity": "Uncommon", "value": 45, "image": "../images/foods/uncommon/pale-fruit.png" },
+  { "name": "Broken Tooth", "rarity": "Uncommon", "value": 39, "image": "../images/foods/uncommon/broken-tooth.png" },
 
   { "name": "Mini Worm", "rarity": "Rare", "value": 45, "image": "../images/foods/rare/mini-worm.png" },
   { "name": "Dark Vine", "rarity": "Rare", "value": 90, "image": "../images/foods/rare/dark-vine.png" },
@@ -86,6 +87,7 @@
   { "name": "Lobster", "rarity": "Epic", "value": 500, "image": "../images/foods/epic/lobster.png" },
   { "name": "Crocodile Tail (Red)", "rarity": "Epic", "value": 500, "image": "../images/foods/epic/crocodile-tail-red.png" },
   { "name": "Butter", "rarity": "Epic", "value": 550, "image": "../images/foods/epic/butter.png" },
+  { "name": "Marrow Preserve", "rarity": "Epic", "value": 364, "image": "../images/foods/epic/marrow-preserve.png" },
 
   { "name": "Nutrient Paste", "rarity": "Legendary", "value": 699, "image": "../images/foods/legendary/nutrient-paste.png" },
   { "name": "Truffle", "rarity": "Legendary", "value": 750, "image": "../images/foods/legendary/truffle.png" },
