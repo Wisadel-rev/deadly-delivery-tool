@@ -108,6 +108,6 @@
 
   { "name": "Soul Stone", "rarity": "Mythic", "value": 5000, "image": "../images/foods/mythic/soul-stone.png" },
   { "name": "Dreamcore", "rarity": "Mythic", "value": 7888, "image": "../images/foods/mythic/dreamcore.png" },
-  { "name": "Eye Star", "rarity": "Mythic", "value": 8888, "image": "../images/foods/mythic/eye-star.png" },
+  { "name": "Eye Star", "rarity": "Mythic", "value": 11111, "image": "../images/foods/mythic/eye-star.png" },
   { "name": "Bloom Heart", "rarity": "Mythic", "value": 20000, "image": "../images/foods/mythic/bloom-heart.png" }
 ]
