@@ -11,11 +11,11 @@
     { "id": "diamond", "name": "Diamond", "value": 4.0 }
   ],
   "advancedMutations": [
-    { "id": "soul", "name": "Soul", "value": 4.0 },
-    { "id": "matrix", "name": "Matrix", "value": 4.5 },
-    { "id": "greedy", "name": "Greedy", "value": 3.5 },
     { "id": "overclocked", "name": "Overclocked", "value": 2.0 },
-    { "id": "eclipse", "name": "Eclipse", "value": 3.8 }
+    { "id": "greedy", "name": "Greedy", "value": 3.5 },
+    { "id": "eclipse", "name": "Eclipse", "value": 3.8 },
+    { "id": "soul", "name": "Soul", "value": 4.0 },
+    { "id": "matrix", "name": "Matrix", "value": 4.5 }
   ],
   "specialMutations": [
     { "id": "celebratory", "name": "Celebratory", "value": 3.0 },
