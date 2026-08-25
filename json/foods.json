@@ -11,6 +11,8 @@
   { "name": "Strawberry", "rarity": "Common", "value": 14, "image": "../images/foods/common/strawberry.png" },
   { "name": "Strange Meat", "rarity": "Common", "value": 15, "image": "../images/foods/common/strange-meat.png" },
   { "name": "Burnt Turkey", "rarity": "Common", "value": 15, "image": "../images/foods/common/burnt-turkey.png" },
+  { "name": "Strawberry Lollipop", "rarity": "Common", "value": 12, "image": "../images/foods/common/strawberry-lollipop.png" },
+  { "name": "Grape Lollipop", "rarity": "Common", "value": 12, "image": "../images/foods/common/grape-lollipop.png" },
 
   { "name": "Peppermint Candy", "rarity": "Uncommon", "value": 19, "image": "../images/foods/uncommon/peppermint-candy.png" },
   { "name": "Half Watermelon", "rarity": "Uncommon", "value": 20, "image": "../images/foods/uncommon/half-watermelon.png" },
@@ -36,6 +38,13 @@
   { "name": "Coffee Beans", "rarity": "Uncommon", "value": 77, "image": "../images/foods/uncommon/coffee-beans.png" },
   { "name": "Pale Fruit", "rarity": "Uncommon", "value": 45, "image": "../images/foods/uncommon/pale-fruit.png" },
   { "name": "Broken Tooth", "rarity": "Uncommon", "value": 39, "image": "../images/foods/uncommon/broken-tooth.png" },
+  { "name": "Sugarcane Stalk", "rarity": "Uncommon", "value": 52, "image": "../images/foods/uncommon/sugarcane-stalk.png" },
+  { "name": "Giant Gummy Bear", "rarity": "Uncommon", "value": 56, "image": "../images/foods/uncommon/giant-gummy-bear.png" },
+  { "name": "Whole Coconut", "rarity": "Uncommon", "value": 47, "image": "../images/foods/uncommon/whole-coconut.png" },
+  { "name": "Vanilla Pod Bundle", "rarity": "Uncommon", "value": 69, "image": "../images/foods/uncommon/vanilla-pod-bundle.png" },
+  { "name": "Purple Sweet Potato", "rarity": "Uncommon", "value": 42, "image": "../images/foods/uncommon/purple-sweet-potato.png" },
+  { "name": "Cotton Candy", "rarity": "Uncommon", "value": 40, "image": "../images/foods/uncommon/cotton-candy.png" },
+  { "name": "Rainbow Swirl Lollipop", "rarity": "Uncommon", "value": 40, "image": "../images/foods/uncommon/rainbow-swirl-lollipop.png" },
 
   { "name": "Mini Worm", "rarity": "Rare", "value": 45, "image": "../images/foods/rare/mini-worm.png" },
   { "name": "Dark Vine", "rarity": "Rare", "value": 90, "image": "../images/foods/rare/dark-vine.png" },
@@ -61,6 +70,7 @@
   { "name": "Gingerbread Man", "rarity": "Rare", "value": 150, "image": "../images/foods/rare/gingerbread-man.png" },
   { "name": "Cream Powder", "rarity": "Rare", "value": 166, "image": "../images/foods/rare/cream-powder.png" },
   { "name": "Red Mushroom", "rarity": "Rare", "value": 190, "image": "../images/foods/rare/red-mushroom.png" },
+  { "name": "Sour Gummy Worm", "rarity": "Rare", "value": 188, "image": "../images/foods/rare/sour-gummy-worm.png" },
 
   { "name": "Cheese", "rarity": "Epic", "value": 130, "image": "../images/foods/epic/cheese.png" },
   { "name": "Void Slime", "rarity": "Epic", "value": 476, "image": "../images/foods/epic/void-slime.png" },
@@ -88,6 +98,7 @@
   { "name": "Crocodile Tail (Red)", "rarity": "Epic", "value": 500, "image": "../images/foods/epic/crocodile-tail-red.png" },
   { "name": "Butter", "rarity": "Epic", "value": 550, "image": "../images/foods/epic/butter.png" },
   { "name": "Marrow Preserve", "rarity": "Epic", "value": 364, "image": "../images/foods/epic/marrow-preserve.png" },
+  { "name": "Candied Hawthorn Skewer", "rarity": "Epic", "value": 316, "image": "../images/foods/epic/candied-hawthorn-skewer.png" },
 
   { "name": "Nutrient Paste", "rarity": "Legendary", "value": 699, "image": "../images/foods/legendary/nutrient-paste.png" },
   { "name": "Truffle", "rarity": "Legendary", "value": 750, "image": "../images/foods/legendary/truffle.png" },
